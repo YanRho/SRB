@@ -40,7 +40,7 @@ nav {
 
 .nav-links a:hover {
     color: #000;
-    background-color: rgba(94, 180, 247, 0.2);
+    background-color: rgba(94, 180, 247, 2.0);
     box-shadow: 0 0 10px rgba(94, 180, 247, 0.5);
 }
 
