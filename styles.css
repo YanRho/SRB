@@ -144,17 +144,26 @@ header {
 /* About Section Layout */
 .about-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 80px 20%;
     background-color: #f4f4f4;
     max-width: 100%;
     margin: 0 auto;
 }
 
-.about-content {
+.about-container {
+    display: flex;
+    flex: row;
+    align-items: flex-start;
+    justify-content: space-between;
     width: 100%;
+    gap: 20px;
+}
+
+.about-content {
+    flex: 2;
     padding: 20px 5%;
     color: #333; 
     text-align: left;
@@ -180,6 +189,8 @@ header {
     -webkit-text-fill-color: transparent; 
     background-clip: text;
 }
+
+
 
 /* Team Section */
 .team-section {
