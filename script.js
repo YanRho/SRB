@@ -37,3 +37,10 @@ window.addEventListener('load', function() {
     const heroSection = document.querySelector('.hero');
     heroSection.classList.add('show'); // Add 'show' class to trigger CSS animation
 });
+
+// JavaScript for service cards to be flipped
+document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('click', () => {
+        card.querySelector('.service-card-inner').classList.toggle('flipped');
+    });
+});
