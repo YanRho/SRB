@@ -3,8 +3,7 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-
-
+/* ---------------------------------------------------------------------- */
 /* Hero Page */
 .logo img {
     max-width: 200px;
@@ -30,7 +29,6 @@ header {
 }
 
 /* navigation */
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -142,7 +140,7 @@ header {
     transform: translateY(-2px);
 
 }
-
+/* ---------------------------------------------------------------------- */
 /* About Section Layout */
 .about-section {
     display: flex;
@@ -291,6 +289,7 @@ header {
     margin-bottom: 15px;
 }
 
+/* ---------------------------------------------------------------------- */
 /* Contact Section Layout */
 .contact-section {
     position: relative; 
