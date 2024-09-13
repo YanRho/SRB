@@ -190,6 +190,8 @@ header {
     background-clip: text;
 }
 
+
+/* ---------------------------------------------------------------------- */
 /* Gallery Section */
 .gallery-section {
     padding: 60px 20%;
@@ -230,7 +232,7 @@ header {
     transform: scale(1.05); 
 }
 
-
+/* ---------------------------------------------------------------------- */
 /* Team Section */
 .team-section {
     display: flex;
