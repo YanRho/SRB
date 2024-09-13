@@ -199,84 +199,64 @@ header {
 }
 
 .services-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
     color: #333;
 }
 
 .services-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
+    justify-content: center; /* Center the cards */
+    gap: 30px; /* Increased gap for better spacing */
+    margin: 0 auto; /* Center the container */
 }
 
 /* Service Card Styling */
 .service-card {
-    perspective: 1000px; /* Allows the 3D effect for the flip */
-    flex: 1 1 calc(33.33% - 20px); /* Three cards per row */
-    max-width: 300px;
-    min-height: 400px;
-    margin: 40px;
-    position: relative;
-}
-
-.service-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-
-.service-card:hover .service-card-inner {
-    transform: rotateY(180deg);
-}
-
-.service-card-front,
-.service-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
+    background-color: #fff;
     border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Maintain a max width for cards */
+    flex: 1; /* Allow cards to grow to fit the container */
 }
 
-.service-card-front {
-    background-color: #5eb4f7;
-    color: #333;
+.service-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
 
-.service-card-back {
-    background-color: #14239b;
-    transform: rotateY(180deg);
-    color: #FFFF;
-    font-size: 1.5rem;
-}
-
-/* Icons Styling */
-.icon {
-    font-size: 2.5rem;
+.service-card .icon {
+    font-size: 1rem;
     margin-bottom: 10px;
+    color: #5eb4f7; 
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+    color: #333;
+    font-weight: 700;
+}
+
+.service-card p {
+    font-size: 1.3rem;
+    color: #666;
+    line-height: 1.5;
 }
 
 /* Responsive Adjustments */
-@media (max-width: 1024px) {
-    .service-card {
-        flex: 1 1 calc(50% - 20px); /* Two cards per row on medium screens */
-    }
-}
-
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .services-container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack cards on smaller screens */
+        align-items: center; /* Center the stacked cards */
     }
     
     .service-card {
@@ -285,7 +265,6 @@ header {
         margin-bottom: 20px; /* Space between stacked cards */
     }
 }
-
 
 /* ---------------------------------------------------------------------- */
 /* Gallery Section */
